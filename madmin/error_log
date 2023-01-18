@@ -1,0 +1,5 @@
+[15-Jan-2022 01:48:49 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home2/faiktnmr/utwebtasarim.com/demo/teknikservisv3/madmin/include/mbaglan.php:3
+Stack trace:
+#0 /home2/faiktnmr/utwebtasarim.com/demo/teknikservisv3/madmin/galeri_sayfa.php(5): include()
+#1 {main}
+  thrown in /home2/faiktnmr/utwebtasarim.com/demo/teknikservisv3/madmin/include/mbaglan.php on line 3

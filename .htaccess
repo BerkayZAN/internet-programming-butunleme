@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+
+RewriteRule ^galeri/? galeri.php [NC,L]
+RewriteRule ^iletisim/? iletisim.php [NC,L]
+RewriteRule ^kurumsal/? kurumsal.php [NC,L]
+RewriteRule ^arama/? arama.php [NC,L]
+RewriteRule ^anasayfa/? index.php [NC,L]
+RewriteRule ^referanslar/? referanslar.php [NC,L]
+RewriteRule ^urunler/? urunler.php [NC,L]
+RewriteRule ^hizmetler/? hizmetler.php [NC,L]
+
+
+RewriteRule ^ud-([0-9a-zA-Z-_]+)-([0-9]+)$  urundetay.php?seo=$1&id=$2 [L,QSA]
+RewriteRule ^bd-([0-9a-zA-Z-_]+)-([0-9]+)$  blogdetay.php?seo=$1&id=$2 [L,QSA]
+RewriteRule ^hd-([0-9a-zA-Z-_]+)-([0-9]+)$  hizmetdetay.php?seo=$1&id=$2 [L,QSA]
+RewriteRule ^halt-([0-9a-zA-Z-_]+)-([0-9]+)$  hizmetalt.php?seo=$1&id=$2 [L,QSA]
